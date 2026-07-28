@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/modern-chat.css') }}">
+</head>
+<body>
+
+<div class="app">
+
+    <h1>University Guide Chatbot</h1>
+
+    <div class="chat-card">
+        <div id="messages">
+            <p><strong>Bot:</strong> Hello! I am hare to assist you. Do you have any questions for me regarding to university?</p>
+        </div>
+    </div>
+
+    <div class="controls">
+        <form id="send-form">
+            <input type="text" id="message-input" placeholder="Type your question..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+<script src="/static/script.js"></script>
+</body>
+</html>
